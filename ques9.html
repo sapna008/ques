@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x2 Grid</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" style="background-color: #FF5733;">1</div>
+        <div class="grid-item" style="background-color: #33FF57;">2</div>
+        <div class="grid-item" style="background-color: #3357FF;">3</div>
+        <div class="grid-item" style="background-color: #F3FF33;">4</div>
+        <div class="grid-item" style="background-color: #FF33A6;">5</div>
+        <div class="grid-item" style="background-color: #33FFF3;">6</div>
+        <div class="grid-item" style="background-color: #A633FF;">7</div>
+        <div class="grid-item" style="background-color: #FF8C33;">8</div>
+    </div>
+</body>
+</html>
